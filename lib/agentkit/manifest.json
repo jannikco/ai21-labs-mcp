@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-ai21-labs",
+      "description": "Connect AI agents to AI21 Labs using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-ai21-labs/SKILL.md": "918421646d421e1b7d576ff4e2581f659be33ae4d31315b90d2f889401a6016a"
+  }
+}

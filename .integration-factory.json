@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "64cf7f0823b052bf7fbf3eb26cf658ec53ba1b5c842b0e7aaf9c110e4060d100",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.ai21.com/openapi.json"
-  ],
   "id": "ai21-labs-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AI21 Labs MCP setup and connection checker",
-  "description": "Generate AI21 Labs MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AI21 Labs for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-ai21-labs-mcp",
+  "sourceRevision": "250e6667132e1af36851e0f482efd0121a453e3cc7422b925e272c39878bfc49",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.ai21.com/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare AI21 Labs and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "ai21-labs",
   "appName": "AI21 Labs",
-  "providerDocs": "https://api.ai21.com/openapi.json",
-  "providerWebsite": "https://www.ai21.com/",
-  "authentication": {
-    "type": "bearer",
-    "requiredCredentialFields": [
-      "token"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://docs.ai21.com/reference/jamba-1-6-api-ref",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-ai21-labs-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
